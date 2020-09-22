@@ -83,7 +83,6 @@ const App =()=> {
     authListener();
   }, []);
 
-
   return (
     <div className="App">
       {user ? (

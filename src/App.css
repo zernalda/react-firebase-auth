@@ -10,10 +10,10 @@ button {
   outline: none;
   width: 100%;
   padding: 15px 0;
-  color: #fff;
+  color: #000814;
   font-size: 16px;
   letter-spacing: 1px;
-  background: #603bbb;
+  background: #F5CC00;
   cursor: pointer;
 }
 
@@ -21,11 +21,11 @@ button {
   width: 100%;
   min-height: 100vh;
   padding: 0 20px;
-  background: #e9e9e9;
   display: flex;
 }
 
 .login .loginContainer {
+  border-radius: 10px;
   padding: 60px;
   margin: auto;
   width: 100%;
@@ -36,9 +36,9 @@ button {
   justify-content: center;
   background: radial-gradient(
     ellipse at left bottom,
-    rgba(22, 24, 47, 1) 0%,
-    rgba(38, 20, 72, 0.9) 59%,
-    rgba(17, 27, 75, 0.9) 100%
+    #6C757D 0%,
+    #212529 59%,
+    #343A40 100%
   );
   box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
 }
@@ -96,14 +96,14 @@ button {
   min-height: 100vh;
   background: radial-gradient(
     ellipse at left bottom,
-    rgba(22, 24, 47, 1) 0%,
-    rgba(38, 20, 72, 0.9) 59%,
-    rgba(17, 27, 75, 0.9) 100%
+    #6C757D 0%,
+    #212529 59%,
+    #343A40 100%
   );
 }
 
 .hero nav {
-  background: #603bbb;
+  background: #212529;
   width: 100%;
   padding: 20px 40px;
   display: flex;
@@ -118,5 +118,237 @@ button {
 .hero nav button {
   width: 86px;
   padding: 8px 0;
-  background: #3a2b58;
+  background: #F5CC00;
+  color: 212529
 }
+
+.colors1{
+  background-color: #000814;
+}
+
+.colors2{
+  background-color: #001D3D;
+}
+
+.colors3{
+  background-color: #003566;
+}
+
+.colors4{
+  background-color: #CCA000;
+}
+
+.colors5{
+  background-color: #F5CC00;
+}
+
+.colors6{
+  background-color: #F8F9FA;
+}
+
+.colors7{
+  background-color: #E9ECEF;
+}
+
+.colors8{
+  background-color: #DEE2E6;
+}
+
+.colors9{
+  background-color: #CED4DA;
+}
+
+.colors10{
+  background-color: #ADB5BD;
+}
+
+.colors11{
+  background-color: #6C757D;
+}
+
+.colors12{
+  background-color: #495057;
+}
+
+.colors13{
+  background-color: #343A40;
+}
+
+.colors14{
+  background-color: #212529;
+}
+
+.colors15{
+  background-color: #002855;
+}
+
+.colors16{
+  background-color: #0353A4;
+}
+
+.colors17{
+  background-color: #001845;
+}
+
+.nav a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  margin: 0 15px;
+  padding: 10px;
+  border: 1px rgba(255,255,255,0.5) solid;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  color: white;
+}
+.nav a.active {
+  background-color: #61DAFB;
+  color: #222;
+}
+section {
+  padding: 20px 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* appear - on page load */
+.fade-appear {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 100ms linear;
+}
+
+/* enter */
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms linear 300ms;
+}
+
+/* exit */
+.fade-exit {
+    opacity: 1;
+}
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 100ms linear;
+}
+.fade-exit-done {
+  opacity: 0;
+}
+
+/* slide enter */
+.slide-enter {
+  opacity: 0;
+  transform: scale(0.97) translateY(5px);
+  z-index: 1;
+}
+.slide-enter.slide-enter-active {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    transition: opacity 3000ms linear 100ms, transform 3000ms ease-in-out 100ms;
+}
+
+/* slide exit */
+.slide-exit {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    
+}
+.slide-exit.slide-exit-active {
+    opacity: 0;
+    transform: scale(0.97) translateY(5px);
+    transition: opacity 1500ms linear, transform 1500ms ease-out;
+}
+.slide-exit-done {
+  opacity: 0;
+}
+
+/* Card */
+.card-container {
+  position: relative;
+  max-width: 226px;
+  margin: 0 auto;
+}
+
+.card {
+  border: 3px #f3f3f3 solid;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s linear;
+  cursor: pointer;
+  background-color: #f3f3f3;
+  position: absolute;
+  padding: 10px;
+  max-width: 220px;
+  text-align: left;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.card:hover {
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
+}
+.card img {
+  max-width: calc(100%);
+  margin: 0 auto;
+  display: block;
+}
+.card .index {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  line-height: 20px;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  padding: 0 10px;
+}
+.card .price {
+  margin: 0;
+  padding: 10px 0;
+  font-weight: bold;
+}
+.card .details {
+  position: relative;
+}
+.card .features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.card .features li {
+  padding-left: 24px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.card .features li span {
+  display: none;
+}
+.card .features li.icon-bed {
+  background: url(./assets/bed-left-side.svg) left center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.card .features li.icon-bath {
+  background: url(./assets/bathtub.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.card .features li.icon-car {
+  background: url(./assets/car-compact.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+
+
+
