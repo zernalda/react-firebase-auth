@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Nunito", sans-serif;
+  border-radius: 10px;
 }
 
 button {
@@ -10,11 +11,38 @@ button {
   outline: none;
   width: 100%;
   padding: 15px 0;
-  color: #000814;
+  position: relative;
+  background-color: #CCA000;
+  border: none;
   font-size: 16px;
   letter-spacing: 1px;
-  background: #F5CC00;
+  color: #000814;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
   cursor: pointer;
+}
+
+button:after {
+  content: "";
+  background: #F5CC00;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
 }
 
 .login {
@@ -190,6 +218,18 @@ button {
   background-color: #001845;
 }
 
+.nav-menu > ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.test{
+  float: left;
+}
+
 .nav a {
   display: inline-block;
   width: 100px;
@@ -347,6 +387,30 @@ section {
   background: url(./assets/car-compact.svg);
   background-size: auto 100%;
   background-repeat: no-repeat;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
 }
 
 
